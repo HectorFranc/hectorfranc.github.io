@@ -1,0 +1,15 @@
+projects:
+  - name: Proyecto 1
+    url: https://platzi.com
+    description: This is some description.
+    image: Nan
+    imageAlt: Alternative
+  - name: Proyecto 2
+    url: https://platzi.com
+    description: This is some description.
+    image: Nan
+    imageAlt: Alternative
+
+content_path: /home/hector/Desktop/projects/hectorfranc.github.io/content
+base_path: /home/hector/Desktop/projects/hectorfranc.github.io/
+templates_path: /home/hector/Desktop/projects/hectorfranc.github.io/templates
