@@ -3,12 +3,11 @@ from utils.common import get_config
 import os
 
 env = Environment(
-    # loader=PackageLoader('yourapplication', 'templates'),
-    # autoescape=select_autoescape(['html', 'xml'])
     loader=FileSystemLoader(get_config()['templates_path']),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True,
 )
+env.globals['MEDIA_PREFIX'] = '/media/'
 
 
 def generate_template(template_name, html_ext=True):

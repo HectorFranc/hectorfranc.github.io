@@ -21,6 +21,5 @@ static_sites:
     description: 404 Page
     filename_with_ext: 404.html
 
-content_path: /home/hector/Desktop/projects/hectorfranc.github.io/content
-base_path: /home/hector/Desktop/projects/hectorfranc.github.io/
-templates_path: /home/hector/Desktop/projects/hectorfranc.github.io/templates
+content_path: /home/hector/Desktop/projects/hectorfranc.github.io/
+templates_path: /home/hector/Desktop/projects/hectorfranc.github.io/src/templates
