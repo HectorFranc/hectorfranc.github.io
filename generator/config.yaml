@@ -1,14 +1,24 @@
 projects:
   - name: Proyecto 1
+    slug: proyecto-1
     url: https://platzi.com
     description: This is some description.
     image: Nan
     imageAlt: Alternative
   - name: Proyecto 2
+    slug: proyecto-1
     url: https://platzi.com
     description: This is some description.
     image: Nan
     imageAlt: Alternative
+
+home:
+  title: Inicio
+
+static_sites:
+  - title: "404 Page"
+    slug: "404"
+    description: 404 Page
 
 content_path: /home/hector/Desktop/projects/hectorfranc.github.io/content
 base_path: /home/hector/Desktop/projects/hectorfranc.github.io/
