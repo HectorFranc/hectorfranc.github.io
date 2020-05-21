@@ -19,6 +19,7 @@ static_sites:
   - title: "404 Page"
     slug: "404"
     description: 404 Page
+    filename_with_ext: 404.html
 
 content_path: /home/hector/Desktop/projects/hectorfranc.github.io/content
 base_path: /home/hector/Desktop/projects/hectorfranc.github.io/

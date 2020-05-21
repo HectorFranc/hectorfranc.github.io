@@ -1,11 +1,18 @@
-from jinja2 import Template
+from jinja2 import Template, Environment, PackageLoader, select_autoescape, FileSystemLoader
 from utils.common import get_config
 import os
 
-def generate_template(template_name):
-    template_dir = os.path.join(get_config()['templates_path'], f'{template_name}.html')
-    with open(template_dir, mode='r') as f:
-        return Template(f.read())
+env = Environment(
+    # loader=PackageLoader('yourapplication', 'templates'),
+    # autoescape=select_autoescape(['html', 'xml'])
+    loader=FileSystemLoader(get_config()['templates_path']),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True,
+)
+
+
+def generate_template(template_name, html_ext=True):
+    return env.get_template(f'{template_name}{".html" if html_ext else ""}')
 
 def custom_render_template(template: Template, *args, **kwargs):
     return template.render(*args, **kwargs)

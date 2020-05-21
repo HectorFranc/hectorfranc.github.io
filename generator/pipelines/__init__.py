@@ -25,8 +25,9 @@ def home_pipeline():
     )
 
 def static_pipeline():
-    static_template = generate_template('static')
     for static_site in get_config()['static_sites']:
+        static_file_dir = f'static/{static_site["filename_with_ext"]}'
+        static_template = generate_template(static_file_dir, html_ext=False)
         write_rendered_template_to_file(
             template=static_template,
             filename=static_site['slug'],
